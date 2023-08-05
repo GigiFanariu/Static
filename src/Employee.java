@@ -1,25 +1,17 @@
 public class Employee {
+    String name;
+    String surname;
+    String address;
 
-    private final String name;
-    private final String surname;
-    private  final  String address;
-
-    public Employee(String newEmployee, String newEmployeeSurname, String newEmployeeAddress) {
-        this.name = newEmployee;
+    public Employee(String newEmployeeName, String newEmployeeSurname, String newEmployeeAddress) {
+        this.name = newEmployeeName;
         this.surname = newEmployeeSurname;
         this.address = newEmployeeAddress;
     }
+
     public String getEmployeeDetails() {
-        return String.format("\nName: %s\nSurname: %s\nAddress: %s", name, surname, address);
+        return "Name: " + name + "\nSurname: " + surname + "\nAddress: " + address;
     }
-    public String getName() {
-        return name;
-    }
-    public String getSurname() {
-        return surname;
-    }
-    public String getAddress() {
-        return address;
-    }
-    }
+}
+
 
